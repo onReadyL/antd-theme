@@ -53,7 +53,8 @@ class ThemeCard extends Component {
       window.less
         .modifyVars(theme)
         .then(() => { })
-        .catch(() => {
+        .catch((err) => {
+          console.error(err.message);
           message.error('Failed to update theme');
         });
     }
@@ -250,7 +251,8 @@ class ThemeCard extends Component {
         this.setState({ vars });
         localStorage.setItem(selectedTheme, JSON.stringify(theme));
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error(err.message);
         message.error('Failed to update theme');
       });
   }
@@ -267,7 +269,8 @@ class ThemeCard extends Component {
           this.setState({ vars });
           localStorage.setItem(selectedTheme, JSON.stringify(theme));
         })
-        .catch(() => {
+        .catch((err) => {
+          console.error(err.message);
           message.error('Failed to update theme');
         });
     }
@@ -286,7 +289,8 @@ class ThemeCard extends Component {
         this.setState({ vars });
         localStorage.setItem(selectedTheme, JSON.stringify(theme));
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error(err.message);
         message.error('Failed to update theme');
       });
   }

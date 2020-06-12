@@ -5,7 +5,7 @@
     "syntax-dynamic-import",
     "react-hot-loader/babel",
     "transform-decorators-legacy",
-    ["import", { "libraryName": "antd"}],
+    ["import", { "libraryName": "antd", "libraryDirectory": "lib", "style": true }],
     ["import", {
       "libraryName": "ant-design-pro",
       "libraryDirectory": "lib",

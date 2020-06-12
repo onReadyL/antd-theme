@@ -1,6 +1,6 @@
 import React from 'react';
 import PreviewWrapper from '../PreviewWrapper';
-// import './style.less';
+import './style.less';
 
 const ColorPreview = () => (
   <PreviewWrapper id="Color" title="Color">
