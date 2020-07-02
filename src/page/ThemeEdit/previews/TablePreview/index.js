@@ -1,8 +1,6 @@
 import React from 'react';
-import { Form } from '@ant-design/compatible';
-import '@ant-design/compatible/assets/index.css';
 import { DownOutlined } from '@ant-design/icons';
-import { Table, Switch, Radio, Divider } from 'antd';
+import { Table, Switch, Radio, Divider, Form } from 'antd';
 import PreviewWrapper from '../PreviewWrapper';
 // import './style.less';
 

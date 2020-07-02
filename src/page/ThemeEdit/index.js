@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Draggable from 'react-draggable';
-import { Form } from '@ant-design/compatible';
-import '@ant-design/compatible/assets/index.css';
-import { Row, Col, Breadcrumb, Menu, Layout, Switch, Radio, BackTop, Button, Alert } from 'antd';
+import { Row, Col, Breadcrumb, Menu, Layout, Switch, Radio, BackTop, Button, Alert, Form } from 'antd';
 import ThemeCard from 'component/ThemeCard';
 import Menus from './Menus';
 import {

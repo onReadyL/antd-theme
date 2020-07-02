@@ -17,7 +17,7 @@ const ProgressPreview = ({ size, disabled }) => (
         <Progress className="component-col" size={size} disabled={disabled} type="circle" percent={75} />
         <Progress className="component-col" size={size} disabled={disabled} type="circle" percent={70} status="exception" />
         <Progress className="component-col" size={size} disabled={disabled} type="circle" percent={100} />
-        <Progress className="component-col" size={size} disabled={disabled} type="dashboard" percent={60} successPercent={30} />
+        <Progress className="component-col" size={size} disabled={disabled} type="dashboard" percent={60} success={{ progress: 30 }} />
       </div>
     </div>
   </PreviewWrapper>

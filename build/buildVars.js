@@ -5,7 +5,8 @@ const vars = require('../src/vars');
 const varsObj = {};
 
 const rl = readline.createInterface({
-  input: fs.createReadStream('./node_modules/antd/lib/style/themes/default.less'),
+  input: fs.createReadStream('./src/stylesheet/default.less'),
+  // input: fs.createReadStream('./node_modules/antd/lib/style/themes/default.less'),
   crlfDelay: Infinity
 });
 

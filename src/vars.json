@@ -12,7 +12,113 @@
         "name": "@iconfont-css-prefix",
         "type": "string",
         "value": "anticon",
+        "desc": "ICONFONT"
+      }
+    ]
+  },
+  {
+    "name": "Height Rules",
+    "children": [
+      {
+        "name": "@height-base",
+        "type": "number",
+        "value": 32,
+        "unit": "px",
         "desc": ""
+      },
+      {
+        "name": "@height-lg",
+        "type": "number",
+        "value": 40,
+        "unit": "px",
+        "desc": ""
+      },
+      {
+        "name": "@height-sm",
+        "type": "number",
+        "value": 24,
+        "unit": "px",
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "name": "Vertical Margins",
+    "children": [
+      {
+        "name": "@margin-lg",
+        "type": "number",
+        "value": 24,
+        "unit": "px",
+        "desc": "containers"
+      },
+      {
+        "name": "@margin-md",
+        "type": "number",
+        "value": 16,
+        "unit": "px",
+        "desc": "small containers and buttons"
+      },
+      {
+        "name": "@margin-sm",
+        "type": "number",
+        "value": 12,
+        "unit": "px",
+        "desc": "Form controls and items"
+      },
+      {
+        "name": "@margin-xs",
+        "type": "number",
+        "value": 8,
+        "unit": "px",
+        "desc": "small items"
+      },
+      {
+        "name": "@margin-xss",
+        "type": "number",
+        "value": 4,
+        "unit": "px",
+        "desc": "more small"
+      }
+    ]
+  },
+  {
+    "name": "Vertical Paddings",
+    "children": [
+      {
+        "name": "@padding-lg",
+        "type": "number",
+        "value": 24,
+        "unit": "px",
+        "desc": "containers"
+      },
+      {
+        "name": "@padding-md",
+        "type": "number",
+        "value": 16,
+        "unit": "px",
+        "desc": "small containers and buttons"
+      },
+      {
+        "name": "@padding-sm",
+        "type": "number",
+        "value": 12,
+        "unit": "px",
+        "desc": "Form controls and items"
+      },
+      {
+        "name": "@padding-xs",
+        "type": "number",
+        "value": 8,
+        "unit": "px",
+        "desc": "small items"
+      },
+      {
+        "name": "@padding-xss",
+        "type": "number",
+        "value": 4,
+        "unit": "px",
+        "desc": "more small"
       }
     ]
   },
@@ -276,7 +382,7 @@
       {
         "name": "@font-family",
         "type": "string",
-        "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,",
+        "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol','Noto Color Emoji'",
         "desc": ""
       },
       {
@@ -496,31 +602,31 @@
       {
         "name": "@shadow-1-up",
         "type": "string",
-        "value": "0 -6px 16px -8px rgba(0, 0, 0, 0.08), 0 -9px 28px 0 rgba(0, 0, 0, 0.05),",
+        "value": "0 -6px 16px -8px rgba(0, 0, 0, 0.08), 0 -9px 28px 0 rgba(0, 0, 0, 0.05),0 -12px 48px 16px rgba(0, 0, 0, 0.03)",
         "desc": ""
       },
       {
         "name": "@shadow-1-down",
         "type": "string",
-        "value": "0 6px 16px -8px rgba(0, 0, 0, 0.08), 0 9px 28px 0 rgba(0, 0, 0, 0.05),",
+        "value": "0 6px 16px -8px rgba(0, 0, 0, 0.08), 0 9px 28px 0 rgba(0, 0, 0, 0.05),0 12px 48px 16px rgba(0, 0, 0, 0.03)",
         "desc": ""
       },
       {
         "name": "@shadow-1-left",
         "type": "string",
-        "value": "-6px 0 16px -8px rgba(0, 0, 0, 0.08), -9px 0 28px 0 rgba(0, 0, 0, 0.05),",
+        "value": "-6px 0 16px -8px rgba(0, 0, 0, 0.08), -9px 0 28px 0 rgba(0, 0, 0, 0.05),-12px 0 48px 16px rgba(0, 0, 0, 0.03)",
         "desc": ""
       },
       {
         "name": "@shadow-1-right",
         "type": "string",
-        "value": "6px 0 16px -8px rgba(0, 0, 0, 0.08), 9px 0 28px 0 rgba(0, 0, 0, 0.05),",
+        "value": "6px 0 16px -8px rgba(0, 0, 0, 0.08), 9px 0 28px 0 rgba(0, 0, 0, 0.05),12px 0 48px 16px rgba(0, 0, 0, 0.03)",
         "desc": ""
       },
       {
         "name": "@shadow-2",
         "type": "string",
-        "value": "0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08),",
+        "value": "0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08),0 9px 28px 8px rgba(0, 0, 0, 0.05)",
         "desc": ""
       }
     ]
@@ -675,24 +781,21 @@
       },
       {
         "name": "@btn-height-base",
-        "type": "number",
-        "value": null,
-        "unit": "px",
+        "type": "string",
+        "value": "@height-base",
         "desc": ""
       },
       {
         "name": "@btn-height-lg",
-        "type": "number",
-        "value": null,
-        "unit": "px",
-        "desc": ""
+        "type": "string",
+        "desc": "",
+        "value": "@height-lg"
       },
       {
         "name": "@btn-height-sm",
-        "type": "number",
-        "value": null,
-        "unit": "px",
-        "desc": ""
+        "type": "string",
+        "desc": "",
+        "value": "@height-sm"
       },
       {
         "name": "@btn-circle-size",
@@ -985,10 +1088,9 @@
       },
       {
         "name": "@zindex-badge",
-        "type": "number",
-        "value": null,
-        "unit": "",
-        "desc": ""
+        "type": "string",
+        "desc": "",
+        "value": "auto"
       },
       {
         "name": "@zindex-picker-panel",
@@ -1159,45 +1261,39 @@
     "children": [
       {
         "name": "@input-height-base",
-        "type": "number",
-        "value": null,
-        "unit": "px",
-        "desc": ""
+        "type": "string",
+        "desc": "",
+        "value": "@height-base"
       },
       {
         "name": "@input-height-lg",
-        "type": "number",
-        "value": null,
-        "unit": "px",
-        "desc": ""
+        "type": "string",
+        "desc": "",
+        "value": "@height-lg"
       },
       {
         "name": "@input-height-sm",
-        "type": "number",
-        "value": null,
-        "unit": "px",
-        "desc": ""
+        "type": "string",
+        "desc": "",
+        "value": "@height-sm"
       },
       {
         "name": "@input-padding-vertical-base",
-        "type": "number",
-        "value": null,
-        "unit": "px",
-        "desc": ""
+        "type": "string",
+        "desc": "",
+        "value": "max(round((@input-height-base - @font-size-base * @line-height-base) / 2 * 10) / 10 - @border-width-base, 3px)"
       },
       {
         "name": "@input-padding-vertical-sm",
-        "type": "number",
-        "value": null,
-        "unit": "px",
-        "desc": ""
+        "type": "string",
+        "desc": "",
+        "value": "max(round((@input-height-sm - @font-size-base * @line-height-base) / 2 * 10) / 10 - @border-width-base, 0)"
       },
       {
         "name": "@input-padding-vertical-lg",
-        "type": "number",
-        "value": null,
-        "unit": "px",
-        "desc": ""
+        "type": "string",
+        "desc": "",
+        "value": "ceil((@input-height-lg - @font-size-lg * @line-height-base) / 2 * 10) / 10 - @border-width-base"
       },
       {
         "name": "@input-placeholder-color",
@@ -1370,10 +1466,9 @@
     "children": [
       {
         "name": "@modal-body-padding",
-        "type": "number",
-        "value": null,
-        "unit": "px",
-        "desc": ""
+        "type": "string",
+        "desc": "",
+        "value": "@padding-lg"
       },
       {
         "name": "@modal-header-bg",
@@ -1832,7 +1927,7 @@
       {
         "name": "@card-shadow",
         "type": "string",
-        "value": "0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12),",
+        "value": "0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12),0 5px 12px 4px rgba(0, 0, 0, 0.09)",
         "desc": ""
       },
       {
@@ -2163,10 +2258,9 @@
     "children": [
       {
         "name": "@pagination-item-size",
-        "type": "number",
-        "value": null,
-        "unit": "px",
-        "desc": ""
+        "type": "string",
+        "desc": "",
+        "value": "@height-base"
       },
       {
         "name": "@pagination-item-size-sm",
@@ -2214,10 +2308,9 @@
       },
       {
         "name": "@page-header-padding-vertical",
-        "type": "number",
-        "value": null,
-        "unit": "px",
-        "desc": ""
+        "type": "string",
+        "desc": "",
+        "value": "@padding-md"
       }
     ]
   },
@@ -2451,6 +2544,44 @@
         "type": "color",
         "value": "#f2f2f2",
         "desc": ""
+      },
+      {
+        "name": "@skeleton-to-color",
+        "type": "string",
+        "desc": "",
+        "value": "shade(@skeleton-color, 5%)"
+      },
+      {
+        "name": "@skeleton-paragraph-margin-top",
+        "type": "number",
+        "desc": "",
+        "value": 28
+      },
+      {
+        "name": "@skeleton-paragraph-li-margin-top",
+        "type": "string",
+        "desc": "",
+        "value": "@margin-md"
+      },
+      {
+        "name": "@skeleton-paragraph-li-height",
+        "type": "number",
+        "unit": "px",
+        "desc": "",
+        "value": 16
+      },
+      {
+        "name": "@skeleton-title-height",
+        "type": "number",
+        "unit": "px",
+        "desc": "",
+        "value": 16
+      },
+      {
+        "name": "@skeleton-title-paragraph-margin-top",
+        "type": "string",
+        "desc": "",
+        "value": "@margin-lg"
       }
     ]
   },
@@ -2668,10 +2799,9 @@
       },
       {
         "name": "@drawer-body-padding",
-        "type": "number",
-        "value": null,
-        "unit": "px",
-        "desc": ""
+        "type": "string",
+        "desc": "",
+        "value": "@padding-lg"
       }
     ]
   }

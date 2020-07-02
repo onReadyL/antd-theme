@@ -370,9 +370,21 @@ class ThemeCard extends Component {
     }
   }
 
+  handleSaveCss = () => {
+    const styles = document.querySelectorAll('style');
+    let cssText = '';
+    for (let i = 0, len = styles.length; i < len; i++) {
+      if (styles[i].id === 'less:antd') {
+        cssText = styles[i].innerText;
+      }
+    }
+    return cssText;
+  };
+
   handleSave = () => {
     const jsCode = this.buildJsCode();
     const lessCode = this.buildLessCode();
+    const cssText = this.handleSaveCss();
 
     if (jsCode && lessCode) {
       const zip = new JSZip();
@@ -380,6 +392,7 @@ class ThemeCard extends Component {
 
       theme.file('index.less', lessCode);
       theme.file('index.js', jsCode);
+      theme.file('index.css', cssText);
 
       zip.generateAsync({
         type: 'blob'

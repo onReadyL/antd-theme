@@ -12,7 +12,113 @@ const vars = [
         name: '@iconfont-css-prefix',
         type: 'string',
         value: 'anticon',
+        desc: 'ICONFONT'
+      }
+    ]
+  },
+  {
+    name: 'Height Rules',
+    children: [
+      {
+        name: '@height-base',
+        type: 'number',
+        value: 32,
+        unit: 'px',
         desc: ''
+      },
+      {
+        name: '@height-lg',
+        type: 'number',
+        value: 40,
+        unit: 'px',
+        desc: ''
+      },
+      {
+        name: '@height-sm',
+        type: 'number',
+        value: 24,
+        unit: 'px',
+        desc: ''
+      }
+    ]
+  },
+  {
+    name: 'Vertical Margins',
+    children: [
+      {
+        name: '@margin-lg',
+        type: 'number',
+        value: 24,
+        unit: 'px',
+        desc: 'containers'
+      },
+      {
+        name: '@margin-md',
+        type: 'number',
+        value: 16,
+        unit: 'px',
+        desc: 'small containers and buttons'
+      },
+      {
+        name: '@margin-sm',
+        type: 'number',
+        value: 12,
+        unit: 'px',
+        desc: 'Form controls and items'
+      },
+      {
+        name: '@margin-xs',
+        type: 'number',
+        value: 8,
+        unit: 'px',
+        desc: 'small items'
+      },
+      {
+        name: '@margin-xss',
+        type: 'number',
+        value: 2,
+        unit: 'px',
+        desc: 'more small'
+      }
+    ]
+  },
+  {
+    name: 'Vertical Paddings',
+    children: [
+      {
+        name: '@padding-lg',
+        type: 'number',
+        value: 24,
+        unit: 'px',
+        desc: 'containers'
+      },
+      {
+        name: '@padding-md',
+        type: 'number',
+        value: 16,
+        unit: 'px',
+        desc: 'small containers and buttons'
+      },
+      {
+        name: '@padding-sm',
+        type: 'number',
+        value: 12,
+        unit: 'px',
+        desc: 'Form controls and items'
+      },
+      {
+        name: '@padding-xs',
+        type: 'number',
+        value: 8,
+        unit: 'px',
+        desc: 'small items'
+      },
+      {
+        name: '@padding-xss',
+        type: 'number',
+        value: 2,
+        unit: 'px',
+        desc: 'more small'
       }
     ]
   },
@@ -675,23 +781,18 @@ const vars = [
       },
       {
         name: '@btn-height-base',
-        type: 'number',
-        value: 32,
-        unit: 'px',
+        type: 'string',
+        value: '@height-base',
         desc: ''
       },
       {
         name: '@btn-height-lg',
-        type: 'number',
-        value: 40,
-        unit: 'px',
+        type: 'string',
         desc: ''
       },
       {
         name: '@btn-height-sm',
-        type: 'number',
-        value: 24,
-        unit: 'px',
+        type: 'string',
         desc: ''
       },
       {
@@ -992,9 +1093,7 @@ const vars = [
       },
       {
         name: '@zindex-badge',
-        type: 'number',
-        value: 10,
-        unit: '',
+        type: 'string',
         desc: ''
       },
       {
@@ -1166,23 +1265,17 @@ const vars = [
     children: [
       {
         name: '@input-height-base',
-        type: 'number',
-        value: 32,
-        unit: 'px',
+        type: 'string',
         desc: ''
       },
       {
         name: '@input-height-lg',
-        type: 'number',
-        value: 40,
-        unit: 'px',
+        type: 'string',
         desc: ''
       },
       {
         name: '@input-height-sm',
-        type: 'number',
-        value: 24,
-        unit: 'px',
+        type: 'string',
         desc: ''
       },
       // @input-padding-horizontal: @control-padding-horizontal - 1px;
@@ -1191,23 +1284,17 @@ const vars = [
       // @input-padding-horizontal-lg: @input-padding-horizontal;
       {
         name: '@input-padding-vertical-base',
-        type: 'number',
-        value: 4,
-        unit: 'px',
+        type: 'string',
         desc: ''
       },
       {
         name: '@input-padding-vertical-sm',
-        type: 'number',
-        value: 1,
-        unit: 'px',
+        type: 'string',
         desc: ''
       },
       {
         name: '@input-padding-vertical-lg',
-        type: 'number',
-        value: 6,
-        unit: 'px',
+        type: 'string',
         desc: ''
       },
       {
@@ -1381,9 +1468,7 @@ const vars = [
     children: [
       {
         name: '@modal-body-padding',
-        type: 'number',
-        value: 24,
-        unit: 'px',
+        type: 'string',
         desc: ''
       },
       {
@@ -2174,9 +2259,7 @@ const vars = [
     children: [
       {
         name: '@pagination-item-size',
-        type: 'number',
-        value: 32,
-        unit: 'px',
+        type: 'string',
         desc: ''
       },
       {
@@ -2225,9 +2308,7 @@ const vars = [
       },
       {
         name: '@page-header-padding-vertical',
-        type: 'number',
-        value: 16,
-        unit: 'px',
+        type: 'string',
         desc: ''
       }
     ]
@@ -2462,6 +2543,38 @@ const vars = [
         type: 'color',
         value: '#f2f2f2',
         desc: ''
+      },
+      {
+        name: '@skeleton-to-color',
+        type: 'string',
+        desc: ''
+      },
+      {
+        name: '@skeleton-paragraph-margin-top',
+        type: 'number',
+        desc: ''
+      },
+      {
+        name: '@skeleton-paragraph-li-margin-top',
+        type: 'string',
+        desc: ''
+      },
+      {
+        name: '@skeleton-paragraph-li-height',
+        type: 'number',
+        unit: 'px',
+        desc: ''
+      },
+      {
+        name: '@skeleton-title-height',
+        type: 'number',
+        unit: 'px',
+        desc: ''
+      },
+      {
+        name: '@skeleton-title-paragraph-margin-top',
+        type: 'string',
+        desc: ''
       }
     ]
   },
@@ -2679,9 +2792,7 @@ const vars = [
       },
       {
         name: '@drawer-body-padding',
-        type: 'number',
-        value: 24,
-        unit: 'px',
+        type: 'string',
         desc: ''
       }
     ]
