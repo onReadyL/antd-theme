@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import JSZip from 'jszip';
 import { QuestionCircleTwoTone } from '@ant-design/icons';
-import { Card, message, /* Button, */ InputNumber, Input, Tooltip, Collapse, Select, Popconfirm } from 'antd';
+import { Card, message, InputNumber, Input, Tooltip, Collapse, Select, Popconfirm } from 'antd';
 import ColorPicker from 'component/ColorPicker';
 import themes from 'theme';
 import './style.less';

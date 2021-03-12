@@ -156,12 +156,12 @@ const ColorPreview = () => (
             <div className="value">反转文本色</div>
           </div>
         </div>
-        <div className="color-item heading-color-dark">
+        {/* <div className="color-item heading-color-dark">
           <div className="color-item-content">
             <div className="name">@heading-color-dark</div>
             <div className="value">深色标题色</div>
           </div>
-        </div>
+        </div> */}
         <div className="color-item text-color-dark">
           <div className="color-item-content">
             <div className="name">@text-color-dark</div>

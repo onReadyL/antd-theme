@@ -61,7 +61,7 @@
     "@ant-design/aliyun-theme": "^0.0.4",
     "@ant-design/dark-theme": "^2.0.2",
     "@ant-design/icons": "^4.2.1",
-    "antd": "^4.4.0",
+    "antd": "^4.13.1",
     "axios": "^0.18.0",
     "jszip": "^3.2.2",
     "mobx": "^5.1.0",

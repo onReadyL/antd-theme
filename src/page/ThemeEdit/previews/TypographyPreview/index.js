@@ -34,7 +34,7 @@ const TypographyPreview = () => (
       </div>
       <div className="component-row">
         <code>
-         function hello () { }
+          function hello () { }
         </code>
       </div>
     </div>

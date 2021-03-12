@@ -215,12 +215,12 @@ const vars = [
         value: '#fff',
         desc: ''
       },
-      {
-        name: '@heading-color-dark',
-        type: 'color',
-        value: 'rgb(0,0,0,1)',
-        desc: ''
-      },
+      // {
+      //   name: '@heading-color-dark',
+      //   type: 'color',
+      //   value: 'rgb(0,0,0,1)',
+      //   desc: ''
+      // },
       {
         name: '@text-color-dark',
         type: 'color',
@@ -2552,6 +2552,7 @@ const vars = [
       {
         name: '@skeleton-paragraph-margin-top',
         type: 'number',
+        unit: 'px',
         desc: ''
       },
       {

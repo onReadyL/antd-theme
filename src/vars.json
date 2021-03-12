@@ -194,13 +194,13 @@
       {
         "name": "@heading-color",
         "type": "color",
-        "value": "fade(#000, 85%)",
+        "value": "fade(@black, 85%)",
         "desc": "标题色"
       },
       {
         "name": "@text-color",
         "type": "color",
-        "value": "fade(@black, 65%)",
+        "value": "fade(@black, 85%)",
         "desc": "主文本色"
       },
       {
@@ -213,12 +213,6 @@
         "name": "@text-color-inverse",
         "type": "color",
         "value": "@white",
-        "desc": ""
-      },
-      {
-        "name": "@heading-color-dark",
-        "type": "color",
-        "value": "fade(@white, 100%)",
         "desc": ""
       },
       {
@@ -382,7 +376,7 @@
       {
         "name": "@font-family",
         "type": "string",
-        "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol','Noto Color Emoji'",
+        "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol','Noto Color Emoji'",
         "desc": ""
       },
       {
@@ -620,7 +614,7 @@
       {
         "name": "@shadow-1-right",
         "type": "string",
-        "value": "6px 0 16px -8px rgba(0, 0, 0, 0.08), 9px 0 28px 0 rgba(0, 0, 0, 0.05),12px 0 48px 16px rgba(0, 0, 0, 0.03)",
+        "value": "6px 0 16px -8px rgba(0, 0, 0, 0.08), 9px 0 28px 0 rgba(0, 0, 0, 0.05), 12px 0 48px 16px rgba(0, 0, 0, 0.03)",
         "desc": ""
       },
       {
@@ -1069,7 +1063,7 @@
       {
         "name": "@zindex-table-fixed",
         "type": "string",
-        "value": "auto",
+        "value": "2",
         "desc": ""
       },
       {
@@ -1158,7 +1152,7 @@
       {
         "name": "@zindex-tooltip",
         "type": "number",
-        "value": 1060,
+        "value": 1070,
         "unit": "",
         "desc": ""
       }
@@ -1281,19 +1275,19 @@
         "name": "@input-padding-vertical-base",
         "type": "string",
         "desc": "",
-        "value": "max(round((@input-height-base - @font-size-base * @line-height-base) / 2 * 10) / 10 - @border-width-base, 3px)"
+        "value": "max((round(((@input-height-base - @font-size-base * @line-height-base) / 2) * 10) / 10) -@border-width-base,3px)"
       },
       {
         "name": "@input-padding-vertical-sm",
         "type": "string",
         "desc": "",
-        "value": "max(round((@input-height-sm - @font-size-base * @line-height-base) / 2 * 10) / 10 - @border-width-base, 0)"
+        "value": "max((round(((@input-height-sm - @font-size-base * @line-height-base) / 2) * 10) / 10) -@border-width-base,0)"
       },
       {
         "name": "@input-padding-vertical-lg",
         "type": "string",
         "desc": "",
-        "value": "ceil((@input-height-lg - @font-size-lg * @line-height-base) / 2 * 10) / 10 - @border-width-base"
+        "value": "(ceil(((@input-height-lg - @font-size-lg * @line-height-base) / 2) * 10) / 10) - @border-width-base"
       },
       {
         "name": "@input-placeholder-color",
@@ -1508,7 +1502,7 @@
       {
         "name": "@progress-text-color",
         "type": "string",
-        "value": "@text-color",
+        "value": "@text-color ",
         "desc": ""
       },
       {
@@ -1815,7 +1809,7 @@
       {
         "name": "@badge-color",
         "type": "string",
-        "value": "@error-color",
+        "value": "@highlight-color",
         "desc": ""
       },
       {
@@ -1915,7 +1909,7 @@
       {
         "name": "@card-actions-background",
         "type": "string",
-        "value": "@background-color-light",
+        "value": "@component-background",
         "desc": ""
       },
       {
@@ -2285,7 +2279,7 @@
       {
         "name": "@pagination-font-family",
         "type": "string",
-        "value": "Arial",
+        "value": "@font-family",
         "desc": ""
       },
       {
@@ -2542,7 +2536,7 @@
       {
         "name": "@skeleton-color",
         "type": "color",
-        "value": "#f2f2f2",
+        "value": "rgba(190, 190, 190, 0.2)",
         "desc": ""
       },
       {
@@ -2776,7 +2770,7 @@
       {
         "name": "@statistic-unit-font-size",
         "type": "number",
-        "value": 16,
+        "value": 24,
         "unit": "px",
         "desc": ""
       },
